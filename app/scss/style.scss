@@ -1,13 +1,201 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 
 
+.header{
+    padding: 20px 0 25px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
 
+    .menu__list{
+        display: flex;
+        li+li{
+            margin-left: 30px;
+        }
+        a{
+            @extend %rubik-500;
+            color: #436372;
+        }
+    }
+    
+    .user-nav{
+        display: flex;
+        position: relative;
+        &__link{
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            background-color: #edf1f4;
+            border-radius: 50%;
+            position: relative;
+        }
+        &__link-box{
+            width: 150px;
+            height: 50px;
+            background-color: #fcd7b6;
+            border-radius: 23px;
+            display: flex;
+            justify-content: center;
+            margin: 0 20px;
+            a{
+                background-color: transparent;
+                padding: 0 20px;
+            }
+            span{
+                position: absolute;
+                font-size: 10px;
+                line-height: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: #fff;
+                color: #000;
+                top: 8px;
+                right: 13px;
+            }
+        }
 
+        &__link--line::before{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 38px;
+            background-color: #fde7d3;
+            top: 5px;
+            right: -1px;
+        }
+    }
+}
 
+.header__slider{
+    &-start{
+        max-width: 1300px;
+        margin: 0 auto;
+        position: relative;
+    }
+    &-item__wrapper{
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &-item{
+        padding: 250px 0 280px;
+        display: flex !important;
+        
+    }
+    &-info{
+        max-width: 600px;
+    }
+    &-title{
+        @extend %rubik-500;
+        color: #243f4d;
+        font-size: 72px;
+        line-height: 70px;
+        margin-bottom: 10px;
+    }
+    &-text{
+        font-size: 18px;
+        line-height: 30px;
+        color: #436372;
+        max-width: 350px;
+        margin-bottom: 70px;
+    }
+    &-link{
+        @extend %rubik-500;
+        padding: 15px 100px 15px 12px;
+        background-color: #a3bbc8;
+        font-size: 15px;
+        line-height: 12px;
+        color: $white;
+        position: relative;
+        &::after{
+            content: '';
+            width: 22px;
+            height: 9px;
+            position: absolute;
+            background-image: url('../images/icons/arrow-right.png');
+            background-repeat: no-repeat;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+        }
+    }
+    &-image-box{
+        display: flex;
+        align-items: flex-end;
+    }
+    
+}
+.slick-dots{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    button{
+        cursor: pointer;
+        margin: 0 6px;
+        font-size: 11px;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        background-color: #fde3cc;
+        border: none;
+        border-radius: 50%;
+        outline-color: transparent;
+        font-size: 10px;
+        line-height: 1;
+    }
+}
+.slick-active{
+    button{
+        background-color: #fff;
+    }
+}
 
+.header-bottom{
+    background-color: #fef7f0;
+    &__container{
+        max-width: 1570px;
+        padding: 48px 45px;
+        margin: 0 auto;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+    }
+    &__item-info{
+        margin-left: 25px;
+    }
+    &__item-title{
+        font-size: 18px;
+        line-height: 35px;
+        @extend %dmSans-700;
+        color: #414141;
+    }
+    &__item-text{
+        font-size: 16px;
+        line-height: 25px;
+        @extend %dmSans-400;
+        color: #585858;
+        max-width: 200px;
+    }
+
+}
 
 @import 'media';
