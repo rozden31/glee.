@@ -184,20 +184,20 @@
     <main class="main">
         <section class="product">
             <div class="product__container">
-                <h2 class="product__title">
+                <h2 class="product__title title">
                     Products of the week
                 </h2>
 
                 <div class="product__filter-btn">
                     <button class="product__btn" data-filter="all">All</button>
-                    <button class="product__btn" data-filter=".category-d">Furnitures</button>
-                    <button class="product__btn" data-filter=".category-b">Chairs</button>
-                    <button class="product__btn" data-filter=".categoty-c">Lighting</button>
-                    <button class="product__btn" data-filter=".category-a">Decor</button>
+                    <button class="product__btn" data-filter=".category-d__product">Furnitures</button>
+                    <button class="product__btn" data-filter=".category-b__product">Chairs</button>
+                    <button class="product__btn" data-filter=".categoty-c__product">Lighting</button>
+                    <button class="product__btn" data-filter=".category-a__product">Decor</button>
                 </div>
 
                 <div class="product__content">
-                    <div class="product-item mix mix category-a">
+                    <div class="product-item mix mix category-a__product">
                         <img class="product-item__images" src="images/product/1.jpg" alt="wooden ratio image">
                         <div class="product-item__link-box">
                             <a class="product-item-link" href="#">
@@ -225,7 +225,7 @@
                         </div>
                     </div>
 
-                    <div class="product-item mix category-b">
+                    <div class="product-item mix mix category-b__product">
                         <img class="product-item__images" src="images/product/2-chair.jpg" alt="wooden ratio image">
                         <div class="product-item__link-box">
                             <a class="product-item-link" href="#">
@@ -253,7 +253,7 @@
                         </div>
                     </div>
 
-                    <div class="product-item mix category-b">
+                    <div class="product-item mix mix category-b__product">
                         <img class="product-item__images" src="images/product/3-chair.jpg" alt="wooden ratio image">
                         <div class="product-item__link-box">
                             <a class="product-item-link" href="#">
@@ -281,7 +281,7 @@
                         </div>
                     </div>
 
-                    <div class="product-item mix category-c mix category-d">
+                    <div class="product-item mix category-c__product mix category-d__product">
                         <img class=" product-item__images" src="images/product/4-table.jpg" alt="wooden ratio image">
                         <div class="product-item__link-box">
                             <a class="product-item-link" href="#">
@@ -337,7 +337,7 @@
                         </div>
                     </div>
 
-                    <div class="product-item mix category-b">
+                    <div class="product-item mix category-b__product">
                         <img class="product-item__images" src="images/product/6-chair.jpg" alt="wooden ratio image">
                         <div class="product-item__link-box">
                             <a class="product-item-link" href="#">
@@ -365,7 +365,7 @@
                         </div>
                     </div>
 
-                    <div class="product-item mix category-b">
+                    <div class="product-item mix category-b__product">
                         <img class="product-item__images" src="images/product/7-chair.jpg" alt="wooden ratio image">
                         <div class="product-item__link-box">
                             <a class="product-item-link" href="#">
@@ -446,12 +446,154 @@
                                 Euismod</h4>
                             <p class="product__sale-text">50W 8000lm Compact Size for HID
                                 StreetLightReplacementLEDCornLight</p>
-                                <a class="product__sale-link" href="#">View More</a>
+                            <a class="product__sale-link" href="#">View More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="design">
+            <div class="design__container">
+                <h2 class="design__title title">New Design</h2>
+
+                <div class="design__filter-btn">
+                    <button class="design__btn" data-filter="all__design">All</button>
+                    <button class="design__btn" data-filter=".category-d__design">Furnitures</button>
+                    <button class="design__btn" data-filter=".category-b__design">Chairs</button>
+                    <button class="design__btn" data-filter=".categoty-c__design">Lighting</button>
+                    <button class="design__btn" data-filter=".category-a__design">Decor</button>
+                </div>
+
+                <div class="design__content">
+                    <div class="design-item" style="background-image: url('images/design/1.png')">
+                        <a class="design-item__link-box" href="#"></a>
+                        <h4 class="design-item__title">Beat Flat Pendant Black</h4>
+                        <p class="design-item__subtitle">Classic</p>
+
+                    </div>
+
+                    <div class="design-item" style="background-image: url('images/design/2.png')">
+                        <a class="design-item__link-box" href="#"></a>
+                        <h4 class="design-item__title">Lampe Sur Pieds Bamboo</h4>
+                        <p class="design-item__subtitle">Classic</p>
+
+                    </div>
+
+                    <div class="design-item" style="background-image: url('images/design/3.png')">
+                        <a class="design-item__link-box" href="#"></a>
+                        <h4 class="design-item__title">Rattan Rocking Chair</h4>
+                        <p class="design-item__subtitle">Classic</p>
+
+                    </div>
+
+                    <div class="design-item" style="background-image: url('images/design/4.png')">
+                        <a class="design-item__link-box" href="#"></a>
+                        <h4 class="design-item__title">Rattan Rocking Chair</h4>
+                        <p class="design-item__subtitle">Classic</p>
+
+                    </div>
+
+                    <div class="design-item" style="background-image: url('images/design/5.png')">
+                        <a class="design-item__link-box" href="#"></a>
+                        <h4 class="design-item__title">Rattan Rocking Chair</h4>
+                        <p class="design-item__subtitle">Classic</p>
+
+                    </div>
+
+                    <div class="design-item" style="background-image: url('images/design/6.png')">
+                        <a class="design-item__link-box" href="#"> </a>
+                        <h4 class="design-item__title">Lampe Sur Pieds Bamboo</h4>
+                        <p class="design-item__subtitle">Classic</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="design__popup" style="background-image: url('images/popup-bg.jpg');">
+                <a href="" class="design__popup-link" data-fancybox
+                    href="https://www.youtube.com/watch?v=S1rh68eRLjI&t=599s">
+                    <img src="images/icons/video-play-btn.svg" alt="video-play start">
+                </a>
+            </div>
+        </section>
+
+
+        <section class="insights">
+            <div class="insights__container">
+                <div class="insights__top">
+                    <h2 class="insights__title title">Our Insights & Articles</h2>
+                    <a class="insights__link" href="#">View All</a>
+                </div>
+
+                <div class="insights__items">
+                    <div class="insights__item">
+                        <a class="insights__item-imglink" href="#">
+                            <img class="insights__image" src="images/insights/1.jpg" alt="insights image">
+                        </a>
+                        <div class="insights__item-wrapper">
+                            <a href="#">
+                                <h4 class="insights__item-title">Diusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam</h4>
+                            </a>
+                            <div class="insights__item-inner">
+                                <div class="insights__item-date">28 JANUARY, 2020</div>
+                                <a href="" class="insights__item-authorlink">BY ADMIN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insights__item">
+                        <a class="insights__item-imglink" href="#">
+                            <img class="insights__image" src="images/insights/2.jpg" alt="insights image">
+                        </a>
+                        <div class="insights__item-wrapper">
+                            <a href="#">
+                                <h4 class="insights__item-title">Aonsectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore </h4>
+                            </a>
+                            <div class="insights__item-inner">
+                                <div class="insights__item-date">28 JANUARY, 2020</div>
+                                <a href="" class="insights__item-authorlink">BY ADMIN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="insights__item insights__item--new">
+                        <a class="insights__item-imglink" href="#">
+                            <img class="insights__image" src="images/insights/3.jpg" alt="insights image">
+                        </a>
+                        <div class="insights__item-wrapper">
+                            <a href="#">
+                                <h4 class="insights__item-title">Rncididunt ut labore et dolore magna aliqua. Ut enim
+                                </h4>
+                            </a>
+                            <div class="insights__item-inner">
+                                <div class="insights__item-date">28 JANUARY, 2020</div>
+                                <a href="" class="insights__item-authorlink">BY ADMIN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="partners">
+                <div class="insights__container">
+                    <ul class="partners__list">
+                        <li class="partners__list-item"><img src="images/partners/1.png" alt=""
+                                class="partners__item-img"></li>
+                        <li class="partners__list-item"><img src="images/partners/2.png" alt=""
+                                class="partners__item-img"></li>
+                        <li class="partners__list-item"><img src="images/partners/3.png" alt=""
+                                class="partners__item-img"></li>
+                        <li class="partners__list-item"><img src="images/partners/4.png" alt=""
+                                class="partners__item-img"></li>
+                        <li class="partners__list-item"><img src="images/partners/5.png" alt=""
+                                class="partners__item-img"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="js/main.min.js"></script>
